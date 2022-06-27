@@ -17,7 +17,7 @@ from telegram import TelegramError
 from telegram import Update, Bot
 from telegram.ext import CommandHandler, run_async, Updater, Handler, InlineQueryHandler
 from telegram.utils.helpers import escape_markdown
-
+from info import BOT_TOKEN as TOKEN 
 from telegram import Message, Chat, MessageEntity, InlineQueryResultArticle
 from os import path
 
