@@ -27,12 +27,6 @@ LOGGER = logging.getLogger()
 def getConfig(name: str):
     return os.environ[name]
 
-try:
-    TOKEN = getConfig('TOKEN')
-except KeyError as e:
-    LOGGER.error("try")
-    exit(1)
-
 updater = telegram.ext.Updater(token=TOKEN)
 bot = updater.bot
 dispatcher = updater.dispatcher
