@@ -22,7 +22,7 @@ from telegram import Message, Chat, MessageEntity, InlineQueryResultArticle
 from os import path
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s")
-logger = logging.getLogger()
+Logger = logging.getLogger()
 
 def getConfig(name: str):
     return os.environ[name]
