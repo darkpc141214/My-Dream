@@ -22,10 +22,6 @@ from telegram import Message, Chat, MessageEntity, InlineQueryResultArticle
 from os import path
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s")
-LOGGER = logging.getLogger()
-
-def getConfig(name: str):
-    return os.environ[name]
 
 updater = telegram.ext.Updater(token=TOKEN)
 bot = updater.bot
